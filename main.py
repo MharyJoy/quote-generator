@@ -3,6 +3,7 @@ import requests
 
 def get_quote():
     #Write your code here.
+    #Pull api for kanye's quote
     response = requests.get(url="https://api.kanye.rest/")
     response.raise_for_status()
     print(response)
